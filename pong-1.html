@@ -6,7 +6,7 @@
 <body>
 
 <div id="redbox" style="position:absolute;top:0px;left:0px;width:10px;height:10px;background:red"></div>
-<div style="position:absolute;top:0px;left:0px;width:500px;height:250px;border: 1px solid black"></div>
+<div style="position:absolute;top:0px;left:0px;width:750px;height:500px;border: 1px solid black"></div>
   
 <script>
   console.log("running...");
@@ -22,13 +22,13 @@
   function frame (){
     console.log("["+x+"",""+y+"]");
     
-    if ( x > 500){
+    if ( x > 750 - 10){
       xdirection = -1;
     }
     if ( x < 0){
       xdirection = 1;
     }
-    if ( y > 250){
+    if ( y > 500 - 10){
       ydirection = -1;
     }
     if ( y < 0){
