@@ -15,10 +15,11 @@
   setInterval(frame, 40);
   
   function frame (){
+    console.log("["+x+"",""+y+"]");
     x = x + 1;
     y = y + 1;
     redbox.style.top = y + 'px'; 
-    redbox.style.top = x + 'px'; 
+    redbox.style.left = x + 'px'; 
   }
 </script>
   
